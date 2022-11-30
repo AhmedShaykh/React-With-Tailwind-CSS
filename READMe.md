@@ -1,1 +1,1 @@
-# TypeScript CLI Number Guessing Game!
+# TypeScript Number Guessing Game!
