@@ -1,8 +1,8 @@
 {
-  "name": "typescript-cli-number-guessing-game",
+  "name": "ahmx-number-game",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,9 @@
     "url": "https://github.com/AhmedShaykh/TypeScript-Number-Guessing-Game/issues"
   },
   "homepage": "https://github.com/AhmedShaykh/TypeScript-Number-Guessing-Game#readme",
+  "bin": {
+    "ahmx-number-game": "bin/index.js"
+  },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
     "@types/chalk-animation": "^1.6.1",
