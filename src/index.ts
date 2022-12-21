@@ -35,8 +35,11 @@ async function guessNumber() {
             name: "num",
             type: "number",
             message: "Guess The Number: ",
-            default() {
-                return 0;
+            validate: async (number: any) => {
+                if (isNaN(number)) {
+                    return "Please Enter Valid Number!"
+                }
+                return true
             }
         }]);
 
