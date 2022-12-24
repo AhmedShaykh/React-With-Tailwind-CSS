@@ -36,18 +36,15 @@ async function guessNumber() {
         let guessNum: { num: number } = await inquirer.prompt([{
             name: "num",
             type: "number",
-            message: "Guess The Number: ",
-            validate: async (number: any) => {
-                if (isNaN(number)) {
-                    return "Please Enter Valid Number!"
-                }
-                return true
+            message: "Guess The Number 0 To 9: ",
+            default() {
+                return 0;
             }
         }]);
 
         if (guessNum.num === randomNum) {
-            console.log(chalk.blue("You Win"));
 
+            console.log(chalk.blue("You Win"));
             break;
         } else {
             console.log(chalk.yellow("Try Again"));
