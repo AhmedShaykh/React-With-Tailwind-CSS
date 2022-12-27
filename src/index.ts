@@ -11,7 +11,7 @@ const runAnimation = () => {
 };
 
 async function welcome() {
-    let animation = chalkAnimation.rainbow("Welcome to Number Guessing Game");
+    let animation = chalkAnimation.glitch("Welcome to Number Guessing Game");
     await runAnimation();
 
     animation.stop();
