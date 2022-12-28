@@ -21,9 +21,9 @@ async function welcome() {
 
 await welcome();
 
-let randomNum: number = Math.floor(Math.random() * 10);
-
 async function guessNumber() {
+
+    let randomNum: number = Math.floor(Math.random() * 10 + 1);
 
     for (let i = 1; i <= 4; i++) {
 
@@ -36,7 +36,7 @@ async function guessNumber() {
         let guessNum: { num: number } = await inquirer.prompt([{
             name: "num",
             type: "number",
-            message: "Guess The Number 0 To 9: ",
+            message: "Guess The Number 1 To 10: ",
             default() {
                 return 0;
             }
